@@ -24,15 +24,15 @@ module.exports = (grunt) ->
         src: 'odometer.js'
         dest: 'odometer.min.js'
 
-    compass:
-      dist:
-        options:
-          sassDir: 'sass'
-          cssDir: 'themes'
+#    compass:
+#      dist:
+#        options:
+#          sassDir: 'sass'
+#          cssDir: 'themes'
 
   grunt.loadNpmTasks 'grunt-contrib-watch'
   grunt.loadNpmTasks 'grunt-contrib-uglify'
   grunt.loadNpmTasks 'grunt-contrib-coffee'
-  grunt.loadNpmTasks 'grunt-contrib-compass'
+#  grunt.loadNpmTasks 'grunt-contrib-compass'
 
-  grunt.registerTask 'default', ['coffee', 'uglify', 'compass']
+  grunt.registerTask 'default', ['coffee', 'uglify']
